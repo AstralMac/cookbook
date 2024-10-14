@@ -41,7 +41,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true}));
 
 app.get("/", async(req,res,next) => {
-  next(createError(501)); //Creates a 501 error
+  //next(createError(501)); //Creates a 501 error
 
   //HTML content for landing page
   const html = `
